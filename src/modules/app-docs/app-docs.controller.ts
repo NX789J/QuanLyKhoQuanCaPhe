@@ -7,6 +7,7 @@ export class AppDocsController {
     {
       group: 'Xác thực & Tài khoản (Auth)',
       items: [
+        { method: 'POST', path: '/api/auth/register', auth: 'Public', desc: 'Tạo User', body: '{ email: "admin@coffee.com", password: "string", fullName: "string", roleName: STAFF or ADMIN or WAREHOUSE_MANAGER }', response: '{ accessToken: "...", user: {...} }' },
         { method: 'POST', path: '/api/auth/login', auth: 'Public', desc: 'Đăng nhập lấy JWT Access Token', body: '{ email: "admin@coffee.com", password: "..." }', response: '{ accessToken: "...", user: {...} }' },
         { method: 'GET', path: '/api/auth/me', auth: 'Bearer Token', desc: 'Lấy thông tin tài khoản đang đăng nhập', body: 'N/A', response: '{ id: "...", email: "...", role: "ADMIN" }' },
       ]

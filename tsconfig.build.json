@@ -17,5 +17,6 @@
     "strictBindCallApply": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true
-  }
+  },
+  "exclude": ["src/**/*.spec.ts", "test/**/*.ts", "vitest.config.ts", "vitest.config.e2e.ts"]
 }
